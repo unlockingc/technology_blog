@@ -1,13 +1,13 @@
 {
   "name": "technology-blog",
   "version": "0.0.1",
-  "description": "study notes of my interest in computer",
+  "description": "Study notes of my interest in computer",
   "main": "index.js",
   "authors": {
     "name": "unlockingc",
     "email": "houyxthu2012@gmail.com"
   },
-  "repository": "none/technology-blog",
+  "repository": "https://github.com/unlockingc/technology_blog",
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src"

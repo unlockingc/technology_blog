@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'Recreation Blog',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -27,27 +27,32 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
+    displayAllHeaders: true,
     logo: '/logo.png',
-    repo: '',
+    repo: 'https://github.com/unlockingc/technology_blog',
     editLinks: false,
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: 'Frontend',
+        link: '/frontend/',
       },
       {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: 'Deep Learning',
+        link: '/deep_learning/'
       }
     ],
-    sidebar: auto
+    sidebar: {
+      /**'/' : [
+        '/deep_learning/',
+        '/frontend/'
+      ],*/
+      '/deep_learning/' : [
+        'index'
+      ]
+    }
   },
 
   /**
