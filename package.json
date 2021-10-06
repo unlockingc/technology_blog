@@ -1,0 +1,19 @@
+{
+  "name": "technology-blog",
+  "version": "0.0.1",
+  "description": "study notes of my interest in computer",
+  "main": "index.js",
+  "authors": {
+    "name": "unlockingc",
+    "email": "houyxthu2012@gmail.com"
+  },
+  "repository": "none/technology-blog",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
