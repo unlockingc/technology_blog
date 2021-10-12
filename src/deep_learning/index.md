@@ -1,8 +1,3 @@
 # Deep Learning
 
-
-asfasf
-
-# Iasda
-## asdasd
-### asdas
+# Fast AI

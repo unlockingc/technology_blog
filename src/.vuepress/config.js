@@ -1,10 +1,10 @@
-const { description } = require('../../package')
+const { description } = require("../../package");
 
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Recreation Blog',
+  title: "Recreation Blog",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -16,9 +16,12 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ["meta", { name: "theme-color", content: "#3eaf7c" }],
+    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+    [
+      "meta",
+      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
+    ],
   ],
 
   /**
@@ -28,38 +31,49 @@ module.exports = {
    */
   themeConfig: {
     displayAllHeaders: true,
-    logo: '/logo.png',
-    repo: 'https://github.com/unlockingc/technology_blog',
+    logo: "/logo.png",
+    repo: "https://github.com/unlockingc/technology_blog",
     editLinks: false,
-    docsDir: '',
-    editLinkText: '',
-    lastUpdated: false,
+    docsDir: "",
+    editLinkText: "",
+    lastUpdated: true,
     nav: [
       {
-        text: 'Frontend',
-        link: '/frontend/',
+        text: "WEB",
+        link: "/web/",
       },
       {
-        text: 'Deep Learning',
-        link: '/deep_learning/'
-      }
+        text: "Deep Learning",
+        link: "/deep_learning/",
+      },
     ],
     sidebar: {
-      /**'/' : [
-        '/deep_learning/',
-        '/frontend/'
-      ],*/
-      '/deep_learning/' : [
-        'index'
-      ]
-    }
+      "/web/": ["", "css", "javascript", "vue"],
+    },
   },
 
+  markdown: {
+    plugins: {
+      "markdown-it-footnote": {},
+      "markdown-it-checkbox": {
+        divWrap: true,
+        divClass: "checkbox",
+        idPrefix: "cbx_",
+        ulClass: "task-list",
+        liClass: "task-list-item",
+      },
+    },
+    extendMarkdown: (md) => {
+      md
+      .use(require("markdown-it-include"))
+      .use(require("markdown-it-pdf"))
+      .use(require("markdown-it-emoji"))
+      .use(require("markdown-it-sup"))
+      .use(require("markdown-it-video"));
+    },
+  },
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-  ]
-}
+  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom"],
+};

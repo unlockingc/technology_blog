@@ -14,6 +14,14 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "markdown-it-pdf": "^1.1.5",
+    "markdown-it-include": "^2.0.0",
+    "markdown-it-emoji" : "^2.0.0",
+    "markdown-it-sup": "^1.0.0",
+    "markdown-it-checkbox": "^1.0.6",
+    "markdown-it-video" : "^0.6.3",
+    "markdown-it-footnote": "^3.0.3",
+    "markdown-it": "^12.2.0",
     "vuepress": "^1.5.3"
   }
 }
