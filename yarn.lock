@@ -4988,6 +4988,11 @@ markdown-it-include@^2.0.0:
   resolved "https://registry.yarnpkg.com/markdown-it-include/-/markdown-it-include-2.0.0.tgz#e86e3b3c68c8f0e0437e179ba919ffd28443127a"
   integrity sha512-wfgIX92ZEYahYWiCk6Jx36XmHvAimeHN420csOWgfyZjpf171Y0xREqZWcm/Rwjzyd0RLYryY+cbNmrkYW2MDw==
 
+markdown-it-multicolumn@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/markdown-it-multicolumn/-/markdown-it-multicolumn-0.1.5.tgz#a163b8422ffa3c0dc75083a2ce6d341ff5aafdac"
+  integrity sha512-hI3yW16bRI9svc7YUi9KyErD3SljbMweiYQT5c/7nx08vkebWzw/rWaq8cmmtTAgJo7I32/x4bO5+rfiOuC6Xw==
+
 markdown-it-pdf@^1.1.5:
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/markdown-it-pdf/-/markdown-it-pdf-1.1.5.tgz#5813c7e8b73e0b1f182053622f266bf7d80e7724"

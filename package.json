@@ -14,6 +14,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "markdown-it-multicolumn" : "^0.1.5",
     "markdown-it-pdf": "^1.1.5",
     "markdown-it-include": "^2.0.0",
     "markdown-it-emoji" : "^2.0.0",

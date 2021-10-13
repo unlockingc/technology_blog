@@ -31,6 +31,7 @@ module.exports = {
    */
   themeConfig: {
     displayAllHeaders: true,
+    sidebarDepth: 10,
     logo: "/logo.png",
     repo: "https://github.com/unlockingc/technology_blog",
     editLinks: false,
@@ -41,6 +42,9 @@ module.exports = {
       {
         text: "WEB",
         link: "/web/",
+        items: [
+          { text: "Introduction", link: "/web/index"},
+          { text: "CSS", link: "/web/css" }],
       },
       {
         text: "Deep Learning",
@@ -53,6 +57,8 @@ module.exports = {
   },
 
   markdown: {
+    lineNumbers: true,
+    extractHeaders: ["h2", "h3", "h4", "h5"],
     plugins: {
       "markdown-it-footnote": {},
       "markdown-it-checkbox": {
@@ -64,12 +70,11 @@ module.exports = {
       },
     },
     extendMarkdown: (md) => {
-      md
-      .use(require("markdown-it-include"))
-      .use(require("markdown-it-pdf"))
-      .use(require("markdown-it-emoji"))
-      .use(require("markdown-it-sup"))
-      .use(require("markdown-it-video"));
+      md.use(require("markdown-it-include"))
+        // .use(require("markdown-it-multicolumn"))
+        .use(require("markdown-it-emoji"))
+        .use(require("markdown-it-sup"))
+        .use(require("markdown-it-video"));
     },
   },
   /**
