@@ -32,7 +32,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    displayAllHeaders: true,
+    displayAllHeaders: false,
     sidebarDepth: 10,
     logo: "/logo.png",
     repo: "https://github.com/unlockingc/technology_blog",
