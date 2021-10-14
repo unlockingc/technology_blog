@@ -46,7 +46,10 @@ module.exports = {
         link: "/web/",
         items: [
           { text: "Introduction", link: "/web/index"},
-          { text: "CSS", link: "/web/css" }],
+          { text: "CSS", link: "/web/css" },
+          { text: "Javascript", link: "/web/javascript"},
+          { text: "Vue3", link: "/web/vue/index"}
+        ],
       },
       {
         text: "Deep Learning",
@@ -54,7 +57,7 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/web/": ["", "css", "javascript", "vue"],
+      "/web/": ["", "css", "javascript", "vue/"],
     },
   },
 
