@@ -9,7 +9,7 @@ title: CSS
 ## 总览
 
 
-<!-- <iframe src='https://app.boardos.online/board/embed/6155a17f8b048703ada5cd54?target=Dqzyg4D2yWDQXP71e77tb' width='100%' height='480px' style='min-width: 640px; min-height: 480px; background-color: #f4f4f4; border: 1px solid #efefef' sandbox='allow-same-origin allow-scripts allow-modals allow-popups allow-popups-to-escape-sandbox' allowfullscreen='true' webkitallowfullscreen='true' mozallowfullscreen='true'></iframe> -->
+<iframe src='https://app.boardos.online/board/embed/6155a17f8b048703ada5cd54?target=Dqzyg4D2yWDQXP71e77tb' width='100%' height='480px' style='min-width: 640px; min-height: 480px; background-color: #f4f4f4; border: 1px solid #efefef' sandbox='allow-same-origin allow-scripts allow-modals allow-popups allow-popups-to-escape-sandbox' allowfullscreen='true' webkitallowfullscreen='true' mozallowfullscreen='true'></iframe>
 
 CSS(Cascading Style Sheet)[^wiki^](https://en.wikipedia.org/wiki/CSS)是一种说明性的语言，用来指示html中的每一个元素的位置，样式等。
 
@@ -121,7 +121,7 @@ css就像是一层一层刷上去的，权重最大的在最表面，所以叫�
 :::
 
 其中
-- [内联样式][css.md/how]
+- [内联样式](#how)权重+1000
 - 每出现一个id，权重+100
 - 每出现一个class，权重加10
 - 其他+1
@@ -214,7 +214,7 @@ Grid layout作为一个比较新的方式，至2021年很多浏览器还没有�
 
 #### Color
 
-<!-- <iframe src='https://app.boardos.online/board/embed/6155a17f8b048703ada5cd54?target=mfmF8VuhrF_UHNYgvTxaT' width='100%' height='480px' style='min-width: 640px; min-height: 480px; background-color: #f4f4f4; border: 1px solid #efefef' sandbox='allow-same-origin allow-scripts allow-modals allow-popups allow-popups-to-escape-sandbox' allowfullscreen='true' webkitallowfullscreen='true' mozallowfullscreen='true'></iframe> -->
+<iframe src='https://app.boardos.online/board/embed/6155a17f8b048703ada5cd54?target=mfmF8VuhrF_UHNYgvTxaT' width='100%' height='480px' style='min-width: 640px; min-height: 480px; background-color: #f4f4f4; border: 1px solid #efefef' sandbox='allow-same-origin allow-scripts allow-modals allow-popups allow-popups-to-escape-sandbox' allowfullscreen='true' webkitallowfullscreen='true' mozallowfullscreen='true'></iframe>
 
 如图，颜色有两个值得注意的方面：
 1. [Color space](https://en.wikipedia.org/wiki/Color_space) : 学过线性代数的同学容易理解，所有颜色形成了一个空间，而每个具体的颜色则是空间中的一个点（没学过理同坐标系），那么我们可以通过一组基向量来确定空间，并描述颜色，这样就**建立了颜色到数字的一一映射**：
@@ -282,5 +282,7 @@ css动画有以下关键概念：
 2. timing function: 按照何种过渡方法填充keyframe之间的帧。
 3. duration： 动画时常
 
+example:
+见[3D cube](#3d-design)
 
 具体可以参考教程：[runoob动画教程](https://www.runoob.com/css3/css3-animations.html)
