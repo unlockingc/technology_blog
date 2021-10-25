@@ -171,12 +171,20 @@ module.exports = {
         ],
       },
       {
-        text: "Deep Learning",
-        link: "/deep_learning/",
+        text : "Prose",
+        items : [
+          {text: "用与意义", link: "/prose/usage"}
+        ],
       },
       {
         text: "Global Grocery",
         link: "/grocery",
+        items: [
+          {
+            text: "Linux",
+            link: "/linux/",
+          },
+        ],
       },
     ],
     sidebar: {
